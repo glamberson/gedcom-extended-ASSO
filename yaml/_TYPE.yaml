@@ -1,0 +1,33 @@
+%YAML 1.2
+---
+lang: en-US
+type: structure
+uri: https://github.com/glamberson/gedcom-extended-ASSO/v1/TYPE
+
+label: Association Type
+specification: |
+  Specifies the type of association or relationship beyond the standard ROLE.
+  This provides more specific categorization of the relationship between
+  two individuals.
+  
+  Unlike ROLE which uses a controlled vocabulary, TYPE allows free-text
+  description to accommodate various relationship types across cultures
+  and time periods.
+  
+  Examples:
+  - "Godparent" (with ROLE "Godfather" or "Godmother")
+  - "Business Partnership" (with ROLE "Business Partner")
+  - "Military Service" (with ROLE "Fellow Soldier")
+  - "Childhood Friend" (with ROLE "Friend")
+  - "Neighbor" (with ROLE "Neighbor")
+
+payload: Text
+
+substructures: []
+
+superstructures:
+  - ASSO
+
+value:
+  type: Text
+  maxLength: 120

@@ -1,0 +1,38 @@
+%YAML 1.2
+---
+lang: en-US
+type: structure
+uri: https://github.com/glamberson/gedcom-extended-ASSO/v1/CONF
+
+label: Association Confidence
+specification: |
+  Indicates the confidence level in the association assertion.
+  Uses an integer scale from 0 to 5:
+  
+  0 = Unreliable evidence or estimated data
+  1 = Questionable reliability of evidence  
+  2 = Secondary evidence, data probably reliable
+  3 = Direct source, primary evidence, data considered reliable
+  4 = Well-supported conclusion from primary evidence
+  5 = Very high confidence
+  
+  This scale matches the confidence model used in the GEDCOM Evidence
+  extension for consistency across extensions.
+  
+  Examples:
+  - 5: Business partnership documented in legal records
+  - 3: Godparent relationship from church baptism record
+  - 1: Possible sibling based on census proximity and ages
+  - 0: Family legend of relationship, no documentation
+
+payload: Integer
+
+substructures: []
+
+superstructures:
+  - ASSO
+
+value:
+  type: Integer
+  minimum: 0
+  maximum: 5

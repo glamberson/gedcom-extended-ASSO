@@ -1,0 +1,27 @@
+%YAML 1.2
+---
+lang: en-US
+type: structure
+uri: https://github.com/glamberson/gedcom-extended-ASSO/v1/START
+
+label: Period Start Date
+specification: |
+  The date when an association began. Uses standard GEDCOM 7 DateValue
+  format supporting exact dates, date ranges, and approximate dates.
+  
+  Examples:
+  - "15 MAY 1850" - Exact date of baptism creating godparent relationship
+  - "1845" - Year business partnership began
+  - "ABT 1920" - Approximate start of friendship
+  - "BET 1942 AND 1943" - Uncertain start during wartime
+
+payload: DateValue
+
+substructures:
+  - PHRASE: "{0:1}"
+
+superstructures:
+  - _PERIOD
+
+value:
+  type: DateValue

@@ -1,0 +1,27 @@
+%YAML 1.2
+---
+lang: en-US
+type: structure
+uri: https://github.com/glamberson/gedcom-extended-ASSO/v1/END
+
+label: Period End Date
+specification: |
+  The date when an association ended. Uses standard GEDCOM 7 DateValue
+  format supporting exact dates, date ranges, and approximate dates.
+  
+  Examples:
+  - "15 MAY 1868" - Exact date ward reached majority
+  - "JUN 1867" - Month business partnership dissolved
+  - "8 MAY 1945" - End of military service (VE Day)
+  - "BEF 1960" - Friendship ended sometime before this date
+
+payload: DateValue
+
+substructures:
+  - PHRASE: "{0:1}"
+
+superstructures:
+  - _PERIOD
+
+value:
+  type: DateValue
