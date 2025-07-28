@@ -1,0 +1,38 @@
+%YAML 1.2
+---
+lang: en-US
+type: structure
+uri: https://github.com/glamberson/gedcom-extended-ASSO/v1/PRIV
+
+label: Association Privacy Flag
+specification: |
+  Indicates whether this specific association should be treated as private,
+  independent of the privacy settings of the individuals involved.
+  
+  Values:
+  - Y: This association is private/confidential
+  - N: This association is not private (default if omitted)
+  
+  Use cases:
+  - Sensitive professional relationships
+  - Confidential informant relationships
+  - Medical or legal associations
+  - Any relationship where disclosure could be harmful
+  
+  Applications should respect this flag by:
+  - Excluding private associations from public reports
+  - Requiring additional authentication to view
+  - Masking or redacting in exports
+
+payload: Y|N
+
+substructures: []
+
+superstructures:
+  - ASSO
+
+value:
+  type: enumeration
+  values:
+    - Y
+    - N
