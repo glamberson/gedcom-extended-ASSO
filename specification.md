@@ -19,12 +19,12 @@ n ASSO @<XREF:INDI>@               {1:M}    g7:ASSO
      +2 PHRASE <Text>              {0:1}    g7:PHRASE
   +1 <<NOTE_STRUCTURE>>            {0:M}
   +1 <<SOURCE_CITATION>>           {0:M}
-  +1 _TYPE <Text>                  {0:1}    https://github.com/glamberson/gedcom-extended-ASSO/v1/TYPE
-  +1 _PERIOD                       {0:1}    https://github.com/glamberson/gedcom-extended-ASSO/v1/PERIOD
-     +2 _START <DateValue>         {0:1}    https://github.com/glamberson/gedcom-extended-ASSO/v1/START
-     +2 _END <DateValue>           {0:1}    https://github.com/glamberson/gedcom-extended-ASSO/v1/END
-  +1 _CONF <Integer>               {0:1}    https://github.com/glamberson/gedcom-extended-ASSO/v1/CONF
-  +1 _PRIV <Y|N>                   {0:1}    https://github.com/glamberson/gedcom-extended-ASSO/v1/PRIV
+  +1 _TYPE <Text>                  {0:1}    https://github.com/glamberson/gedcom-extended-ASSO/_TYPE
+  +1 _PERIOD                       {0:1}    https://github.com/glamberson/gedcom-extended-ASSO/_PERIOD
+     +2 _START <DateValue>         {0:1}    https://github.com/glamberson/gedcom-extended-ASSO/_START
+     +2 _END <DateValue>           {0:1}    https://github.com/glamberson/gedcom-extended-ASSO/_END
+  +1 _CONF <Integer>               {0:1}    https://github.com/glamberson/gedcom-extended-ASSO/_CONF
+  +1 _PRIV <Y|N>                   {0:1}    https://github.com/glamberson/gedcom-extended-ASSO/_PRIV
 ```
 
 ## Structure Definitions
