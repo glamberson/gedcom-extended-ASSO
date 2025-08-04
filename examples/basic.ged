@@ -1,0 +1,91 @@
+%YAML 1.2
+---
+lang: en-US
+
+type: dataset
+
+uri: https://github.com/glamberson/gedcom-extended-ASSO/examples/basic
+
+---
+0 HEAD
+1 GEDC
+2 VERS 7.0
+1 SCHMA
+2 TAG _TYPE https://github.com/glamberson/gedcom-extended-ASSO/_TYPE
+2 TAG _PERIOD https://github.com/glamberson/gedcom-extended-ASSO/_PERIOD
+2 TAG _START https://github.com/glamberson/gedcom-extended-ASSO/_START
+2 TAG _END https://github.com/glamberson/gedcom-extended-ASSO/_END
+2 TAG _CONF https://github.com/glamberson/gedcom-extended-ASSO/_CONF
+2 TAG _PRIV https://github.com/glamberson/gedcom-extended-ASSO/_PRIV
+
+0 @I1@ INDI
+1 NAME John /Smith/
+1 ASSO @I2@
+2 ROLE Godfather
+2 _TYPE Godparent
+2 _PERIOD
+3 _START 15 MAY 1850
+3 _END 15 MAY 1868
+2 _CONF 3
+2 NOTE Spiritual guardian from baptism until ward's majority
+2 SOUR @S1@
+
+0 @I2@ INDI
+1 NAME Mary /Jones/
+1 ASSO @I1@
+2 ROLE Godchild
+2 _TYPE Godparent
+2 _PERIOD
+3 _START 15 MAY 1850
+3 _END 15 MAY 1868
+2 _CONF 3
+
+0 @I3@ INDI
+1 NAME James /Wilson/
+1 ASSO @I4@
+2 ROLE Business Partner
+2 _TYPE General Partnership
+2 _PERIOD
+3 _START 1845
+3 _END JUN 1867
+2 _CONF 4
+2 NOTE Wilson & Associates Mercantile
+2 SOUR @S2@
+3 PAGE County Business Registry, pp. 45-47
+
+0 @I4@ INDI
+1 NAME Thomas /Brown/
+1 ASSO @I3@
+2 ROLE Business Partner
+2 _TYPE General Partnership
+2 _PERIOD
+3 _START 1845
+3 _END JUN 1867
+2 _CONF 4
+
+0 @I5@ INDI
+1 NAME Robert /Johnson/
+1 ASSO @I6@
+2 ROLE Fellow Soldier
+2 _TYPE Battle Buddy
+2 _PERIOD
+3 _START JUN 1942
+3 _END 8 MAY 1945
+2 NOTE Served together in 101st Airborne, European Theater
+
+0 @I6@ INDI
+1 NAME William /Davis/
+1 ASSO @I5@
+2 ROLE Fellow Soldier
+2 _TYPE Battle Buddy
+2 _PERIOD
+3 _START JUN 1942
+3 _END 8 MAY 1945
+
+0 @S1@ SOUR
+1 TITL St. Mary's Church Baptism Records
+
+0 @S2@ SOUR
+1 TITL County Business Registry
+
+0 TRLR
